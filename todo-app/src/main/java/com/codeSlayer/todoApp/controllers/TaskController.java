@@ -1,6 +1,6 @@
 package com.codeSlayer.todoApp.controllers;
 
-import com.codeSlayer.todoApp.models.TodoTask;
+import com.codeSlayer.todoApp.domain.TodoTask;
 import com.codeSlayer.todoApp.services.TaskService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

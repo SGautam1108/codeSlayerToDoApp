@@ -1,7 +1,8 @@
-package com.codeSlayer.todoApp.models;
+package com.codeSlayer.todoApp.domain;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.Data;
 
@@ -11,7 +12,7 @@ import java.time.LocalDateTime;
 @Data
 public class TodoTask {
     @Id
-    @GeneratedValue(strategy = Ge)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String title;
     private String description;

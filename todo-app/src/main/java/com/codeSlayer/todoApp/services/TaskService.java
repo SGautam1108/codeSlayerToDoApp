@@ -1,7 +1,7 @@
 package com.codeSlayer.todoApp.services;
 
 import com.codeSlayer.todoApp.repository.TaskRepository;
-import com.codeSlayer.todoApp.models.TodoTask;
+import com.codeSlayer.todoApp.domain.TodoTask;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -15,7 +15,7 @@ public class TaskService {
     }
 
     public List<TodoTask> getAllTasks(){
-        List<TodoTask> tasksList = taskRepository.fetchAllTasks();
+        List<TodoTask> tasksList = taskRepository.findAll();
         return tasksList;
     }
 }
